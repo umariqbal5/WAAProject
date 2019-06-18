@@ -4,3 +4,16 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.textAlignCenter {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+.data-table {
+    margin-left: auto;
+    margin-right: auto;
+}
