@@ -23,11 +23,6 @@ public class UploadFileController {
 
     @PostMapping(value = "/saveTmRecord", produces = "application/json")
     public Meditation saveTmRecord(@RequestBody Meditation record) {
-//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yy");
-//        System.out.println(record);
-//        //convert String to LocalDate
-//        LocalDate localDate = LocalDate.parse(record.getStrDate(), formatter);
-//        record.setDate(localDate);
         Student student = studentService.findById(record.getId());
         if (student == null) {
             student = new Student();
