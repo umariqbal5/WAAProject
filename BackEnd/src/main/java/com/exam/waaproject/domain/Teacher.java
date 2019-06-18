@@ -22,6 +22,6 @@ public class Teacher {
     //OnetoOne Relation
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "subject_id", referencedColumnName = "id")
-    private Long Subject;
+    private Subject subject;
 
 }

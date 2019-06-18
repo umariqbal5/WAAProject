@@ -25,12 +25,12 @@ public class Student {
     //OnetoOne Relation
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "entry_block_id", referencedColumnName = "id")
-    private Integer entryBlock;
+    private Block entryBlock;
 
     //OnetoOne Relation
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "current_subject_id", referencedColumnName = "id")
-    private Long currentSubject;
+    private Subject currentSubject;
 
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Meditation> meditations = new ArrayList<>();
