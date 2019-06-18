@@ -64,44 +64,46 @@
                 <div class="box-body">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Entry</label>
-                                <select class="form-control entry" style="width: 100%;">
-                                    <option>Feb 2018</option>
-                                    <option>May 2018</option>
-                                    <option>Aug 2018</option>
-                                    <option>Nov 2018</option>
-                                    <option selected="selected">Feb 2019</option>
-                                    <option>May 2019</option>
-                                    <option>Aug 2019</option>
-                                    <option>Nov 2019</option>
-                                </select>
-                            </div>
+                            <form id="retreatForm">
+                                <!--                            <div class="form-group">-->
+                                <!--                                <label>Entry</label>-->
+                                <!--                                <select class="form-control entry" style="width: 100%;">-->
+                                <!--                                    <option>Feb 2018</option>-->
+                                <!--                                    <option>May 2018</option>-->
+                                <!--                                    <option>Aug 2018</option>-->
+                                <!--                                    <option>Nov 2018</option>-->
+                                <!--                                    <option selected="selected">Feb 2019</option>-->
+                                <!--                                    <option>May 2019</option>-->
+                                <!--                                    <option>Aug 2019</option>-->
+                                <!--                                    <option>Nov 2019</option>-->
+                                <!--                                </select>-->
+                                <!--                            </div>-->
 
-                            <div id="studenIDGroup" class="form-group">
-                                <label for="studentID">Student ID</label>
-                                <input type="text" class="form-control" id="studentID"
-                                       placeholder="Student ID">
-                                <span id="studenIDError" class="help-block" hidden></span>
-                            </div>
-                            <!-- Date -->
-                            <div class="form-group">
-                                <label>Date:</label>
-
-                                <div class="input-group date">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-calendar"></i>
-                                    </div>
-                                    <input type="text" class="form-control pull-right" id="datepicker">
+                                <div id="studenIDGroup" class="form-group">
+                                    <label for="studentID">Student ID</label>
+                                    <input type="text" class="form-control" id="studentID"
+                                           placeholder="Student ID" name="student_id">
+                                    <span id="studenIDError" class="help-block" hidden></span>
                                 </div>
-                                <!-- /.input group -->
-                            </div>
+                                <!-- Date -->
+                                <div class="form-group">
+                                    <label>Date:</label>
 
-                            <div>
-                                <button id="save-button" type="button" class="btn btn-block btn-primary">Save
-                                </button>
-                            </div>
+                                    <div class="input-group date">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="text" class="form-control pull-right"
+                                               id="datepicker" name="date">
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
 
+                                <div>
+                                    <button id="save-button" type="button" class="btn btn-block btn-primary">Save
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
