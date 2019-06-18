@@ -42,4 +42,6 @@ public class Student {
 
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<TmRetreat> tmRetreats = new ArrayList<>();
+
+
 }
