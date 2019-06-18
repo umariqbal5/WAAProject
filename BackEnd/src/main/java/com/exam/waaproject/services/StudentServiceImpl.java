@@ -5,6 +5,7 @@ import com.exam.waaproject.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -21,5 +22,10 @@ public class StudentServiceImpl implements StudentService {
     public Student findById(Long id) {
         Optional<Student> student = studentRepository.findById(id);
         return student.isPresent() ? student.get() : null;
+    }
+
+    @Override
+    public List<Student> getAll() {
+        return studentRepository.findAll();
     }
 }
