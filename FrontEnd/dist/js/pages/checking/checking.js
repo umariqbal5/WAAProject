@@ -24,6 +24,26 @@ $(document).ready(function() {
         radioClass: 'iradio_square-green'
     });
     $('#save-button').click(function () {
+        $('#studenIDGroup').removeClass("has-error");
+        $('#studenIDError').hide();
+        $('#dateGroup').removeClass("has-error");
+        $('#dateError').hide();
+
+        let sid = $("#studentID").val();
+        if (sid == null || sid.length < 1) {
+            $('#studenIDGroup').addClass("has-error");
+            $('#studenIDError').html("Student ID can't be empty");
+            $('#studenIDError').show();
+            return;
+        }
+        let date = $("#datepicker").val();
+        if (date == null || date.length < 1) {
+            $('#dateGroup').addClass("has-error");
+            $('#dateError').html("Date can't be empty");
+            $('#dateError').show();
+            return;
+        }
+
         let data = JSON.stringify($("#checkingForm").serializeObject());
         console.log(data);
         $.ajax("http://localhost:8080/api/checking", {
