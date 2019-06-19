@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Upload Meditaion Attendance</title>
+    <title>TM Checking</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -17,14 +17,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" href="../../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="../../plugins/iCheck/square/green.css">
+
     <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
           page. However, you can choose any other skin. Make sure you
           apply the skin class to the body tag so the changes take effect. -->
     <link rel="stylesheet" href="../../dist/css/skins/skin-blue.min.css">
-    <!-- daterange picker -->
-    <link rel="stylesheet" href="../../bower_components/bootstrap-daterangepicker/daterangepicker.css">
-    <!--    customer-->
-    <link rel="stylesheet" href="../../dist/css/retreat/retreat.css">
+    <link rel="stylesheet" href="../../dist/css/checking/checking.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -112,15 +115,14 @@ desired effect
                 <li><a href="#"><i class="fa fa-link"></i> <span>Upload Attendance</span></a></li>
                 <li ><a href="#"><i class="fa fa-link"></i> <span>Attendance by Students</span></a></li>
                 <li><a href="#"><i class="fa fa-link"></i> <span>Attendance Report</span></a></li>
-                <li class="active">
-                    <a href="../checking/checking.html"><i class="fa fa-link"></i>
-                        <span>TM Retreat</span>
+                <li>
+                    <a href="../retreat/retreat.html"><i class="fa fa-link"></i> <span>TM Retreat</span>
                     </a>
                 </li>
-                <li><a href="../checking/checking.html">
-                        <i class="fa fa-link"></i>
-                        <span>TM Checking</span>
-                </a></li>
+                <li class="active">
+                    <a href="#"><i class="fa fa-link"></i> <span>TM Checking</span>
+                    </a>
+                </li>
 
 
             </ul>
@@ -134,8 +136,8 @@ desired effect
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Upload Meditaion Attendance
-                <small>Optional description</small>
+                TM Checking
+                <small>4 times at school</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> HOME</a></li>
@@ -146,10 +148,9 @@ desired effect
         <!-- Main content -->
         <section class="content container-fluid">
 
-            <!-- SELECT2 EXAMPLE -->
             <div class="box box-default">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Retreat Save</h3>
+                    <h3 class="box-title">TM Checking Save</h3>
 
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
@@ -157,49 +158,48 @@ desired effect
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <form id="retreatForm">
-
-                                <div id="studenIDGroup" class="form-group">
-                                    <label for="studentID">Student ID</label>
-                                    <input type="text" class="form-control" id="studentID"
-                                           placeholder="Student ID" name="stu_id">
-                                    <span id="studenIDError" class="help-block" hidden></span>
-                                </div>
-                                <!-- Date -->
-                                <div id="dateGroup" class="form-group">
-                                    <label>Date:</label>
-
-                                    <div class="input-group date">
-                                        <div class="input-group-addon">
-                                            <i class="fa fa-calendar"></i>
-                                        </div>
-                                        <input type="text" class="form-control pull-right"
-                                               id="datepicker"
-                                               name="date">
-                                        <span id="dateError" class="help-block" hidden></span>
-                                    </div>
-                                    <!-- /.input group -->
-                                </div>
-
-                                <div>
-                                    <button id="save-button" type="button" class="btn btn-block btn-primary">Save
-                                    </button>
-                                </div>
-                            </form>
+                    <form id="checkingForm" style="width: 300px">
+                        <div id="studenIDGroup" class="form-group">
+                            <label for="studentID">Student ID：</label>
+                            <input type="text" class="form-control" id="studentID"
+                                   placeholder="Student ID" name="stu_id">
+                            <span id="studenIDError" class="help-block" hidden></span>
                         </div>
-                    </div>
+                        <!-- Date -->
+                        <div id="dateGroup" class="form-group">
+                            <label>Date:</label>
+
+                            <div class="input-group date">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <input type="text" class="form-control pull-right"
+                                       id="datepicker"
+                                       name="date">
+                            </div>
+                            <span id="dateError" class="help-block" hidden></span>
+                            <!-- /.input group -->
+                        </div>
+
+                        <div id="checkGroup">
+                            <label>IsGroup：  </label>
+                            <input type="checkbox" name="groupBool" checked value="true">
+                        </div>
+                        <br>
+
+                        <div>
+                            <button id="save-button" type="button" class="btn btn-block btn-primary">Save
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <!-- /.box -->
-
 
             <!-- Data content -->
             <div class="box">
 
                 <div class="box-header with-border">
-                    <h3 class="box-title">Retreat List</h3>
+                    <h3 class="box-title">TM Checking List</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
@@ -207,14 +207,14 @@ desired effect
                            style="width: 60%">
                         <tr id="tableTitle">
                             <th style="width: 10%">#</th>
-                            <th>Data</th>
+                            <th>Date</th>
+                            <th>IsGroup</th>
                         </tr>
                     </table>
                 </div>
                 <!-- /.box-body -->
             </div>
             <!-- /.box -->
-
         </section>
         <!-- /.content -->
     </div>
@@ -245,8 +245,10 @@ desired effect
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- bootstrap datepicker -->
 <script src="../../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<!--    customer-->
-<script src="../../dist/js/pages/retreat/retreat.js"></script>
+<!-- iCheck 1.0.1 -->
+<script src="../../plugins/iCheck/icheck.js"></script>
+
+<script src="../../dist/js/pages/checking/checking.js"></script>
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. -->

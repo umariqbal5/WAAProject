@@ -17,7 +17,10 @@ public class TmChecking {
     @JsonFormat(pattern = "MM/dd/yyyy")
     private LocalDate date;
 
-    private Boolean isGroup;
+    private Boolean groupBool;
+
+    @Transient
+    private Long stu_id;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "student_id")
