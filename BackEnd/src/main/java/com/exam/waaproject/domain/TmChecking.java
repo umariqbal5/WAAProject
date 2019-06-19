@@ -1,9 +1,10 @@
 package com.exam.waaproject.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
 @Entity
@@ -13,11 +14,12 @@ public class TmChecking {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private Date date;
+    @JsonFormat(pattern = "MM/dd/yyyy")
+    private LocalDate date;
 
     private Boolean isGroup;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "student_id")
     private Student student;
 }

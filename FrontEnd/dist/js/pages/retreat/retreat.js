@@ -16,31 +16,56 @@ $.fn.serializeObject = function()
 };
 $(document).ready(function() {
     "use strict"
-    $('.select2').select2();
+    // $('#studentIDSelect').select2({
+    //     $.ajax("http://localhost:8080/api/retreat").done(function (response){
+    //
+    //         console.log('response',response);
+    //
+    //     });
+    //
+    // });
     //Date picker
     $('#datepicker').datepicker({
         autoclose: true
     });
 
     $('#save-button').click(function () {
-        console.log("click");
-        $('#studenIDGroup').addClass("has-error");
-        $('#studenIDError').html("Student ID can't be empty");
-        $('#studenIDError').show();
+        $('#studenIDGroup').removeClass("has-error");
+        $('#studenIDError').hide();
+        $('#dateGroup').removeClass("has-error");
+        $('#dateError').hide();
         let data = JSON.stringify($("#retreatForm").serializeObject());
-        console.log(data);
-        $.ajax({
-            type: "post",
-            url: 'http://localhost:8080/retreat/save',
-            data: data,
-            contentType: 'application/json',
-            dataType: "json",
-            success: function (response) {
-                console.log('success');
-            },
-            error: function(errors){
-                console.log(errors.responseJSON);
-            }
-        })
+
+        let sid = $("#studentID").val();
+        if (sid == null || sid.length < 1) {
+            $('#studenIDGroup').addClass("has-error");
+            $('#studenIDError').html("Student ID can't be empty");
+            $('#studenIDError').show();
+            return;
+        }
+        let date = $("#datepicker").val();
+        if (date == null || date.length < 1) {
+            $('#dateGroup').addClass("has-error");
+            $('#dateError').html("Date can't be empty");
+            $('#dateError').show();
+            return;
+        }
+
+        $.ajax("http://localhost:8080/api/retreat", {
+            "type": "post",
+            "contentType":"application/json",
+            "data": data
+        }).done(function (response){
+            console.log(response);
+            let str = '';//'<tr><th style="width: 10%">#</th><th>Data</th></tr>';
+            $.each(response, function (index, retreat) {
+                console.log(retreat);
+                str += '<tr><td>' + retreat.id + '</td>' + '<td>' + retreat.date + '</td> </tr>';
+            })
+            $("tr[id!='tableTitle']").remove();
+            $(".data-table").append(str);
+        }).always(function() {
+        });
+
     });
 });

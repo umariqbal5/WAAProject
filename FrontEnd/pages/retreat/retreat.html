@@ -57,7 +57,6 @@
 
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
                     </div>
                 </div>
                 <!-- /.box-header -->
@@ -65,28 +64,22 @@
                     <div class="row">
                         <div class="col-md-6">
                             <form id="retreatForm">
-                                <!--                            <div class="form-group">-->
-                                <!--                                <label>Entry</label>-->
-                                <!--                                <select class="form-control entry" style="width: 100%;">-->
-                                <!--                                    <option>Feb 2018</option>-->
-                                <!--                                    <option>May 2018</option>-->
-                                <!--                                    <option>Aug 2018</option>-->
-                                <!--                                    <option>Nov 2018</option>-->
-                                <!--                                    <option selected="selected">Feb 2019</option>-->
-                                <!--                                    <option>May 2019</option>-->
-                                <!--                                    <option>Aug 2019</option>-->
-                                <!--                                    <option>Nov 2019</option>-->
-                                <!--                                </select>-->
-                                <!--                            </div>-->
+<!--                                <div class="form-group">-->
+<!--                                    <label>Student ID</label>-->
+<!--                                    <select id="studentIDSelect" class="form-control entry"-->
+<!--                                            style="width: 100%;"-->
+<!--                                             placeholder="Student ID" name="stu_id">-->
+<!--                                    </select>-->
+<!--                                </div>-->
 
                                 <div id="studenIDGroup" class="form-group">
                                     <label for="studentID">Student ID</label>
                                     <input type="text" class="form-control" id="studentID"
-                                           placeholder="Student ID" name="student_id">
+                                           placeholder="Student ID" name="stu_id">
                                     <span id="studenIDError" class="help-block" hidden></span>
                                 </div>
                                 <!-- Date -->
-                                <div class="form-group">
+                                <div id="dateGroup" class="form-group">
                                     <label>Date:</label>
 
                                     <div class="input-group date">
@@ -94,7 +87,9 @@
                                             <i class="fa fa-calendar"></i>
                                         </div>
                                         <input type="text" class="form-control pull-right"
-                                               id="datepicker" name="date">
+                                               id="datepicker"
+                                               name="date">
+                                        <span id="dateError" class="help-block" hidden></span>
                                     </div>
                                     <!-- /.input group -->
                                 </div>
@@ -109,33 +104,27 @@
                 </div>
             </div>
             <!-- /.box -->
-        </section>
 
-        <!-- Data content -->
-        <section class="content">
-                <div class="box">
 
-                    <div class="box-header with-border">
-                        <h3 class="box-title">Retreat List</h3>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body">
-                        <table class="table table-bordered textAlignCenter data-table"
-                               style="width: 60%">
-                            <tr>
-                                <th style="width: 10%">#</th>
-                                <th>Data</th>
-                            </tr>
-                            <tr>
-                                <td>1.</td>
-                                <td>06/20/2019</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <!-- /.box-body -->
+            <!-- Data content -->
+            <div class="box">
+
+                <div class="box-header with-border">
+                    <h3 class="box-title">Retreat List</h3>
                 </div>
-                <!-- /.box -->
-
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table class="table table-bordered textAlignCenter data-table"
+                           style="width: 60%">
+                        <tr id="tableTitle">
+                            <th style="width: 10%">#</th>
+                            <th>Data</th>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
         </section>
     </div>
 </div>

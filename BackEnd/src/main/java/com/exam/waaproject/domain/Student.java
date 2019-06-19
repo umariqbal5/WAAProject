@@ -36,12 +36,4 @@ public class Student {
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
     private List<Meditation> meditations = new ArrayList<>();
-
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<TmChecking> tmCheckings = new ArrayList<>();
-
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<TmRetreat> tmRetreats = new ArrayList<>();
-
-
 }
