@@ -160,10 +160,11 @@ desired effect
               | Your Page Content Here |
               -------------------------->
             <div class="form-group">
-                <input type="file" id="input-file"onchange="previewText();">
+                <label for="input-file">Please choose file for upload.</label>
+                <input type="file" id="input-file">
             </div>
             <div class="form-group">
-                <button id="read-file" class="btn btn-primary">Read File</button>
+                <button id="read-file" class="btn btn-primary" disabled>Read File</button>
             </div>
         </section>
         <!-- /.content -->
