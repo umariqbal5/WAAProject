@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="539ab930-f93c-4d22-ab47-e50e46af263d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/attendance_report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/AttendanceReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/AttendanceReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/repository/BlockRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/repository/BlockRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/repository/MeditationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/repository/MeditationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/BlockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/BlockService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/BlockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/BlockServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/MeditationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/MeditationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/MeditationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/MeditationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/attendance_report.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/attendance_report.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/attendance_report.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="193" column="84" selection-start-line="193" selection-start-column="67" selection-end-line="193" selection-end-column="84" />
+            <state relative-caret-position="160">
+              <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
             </state>
           </provider>
         </entry>
@@ -39,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/attendance_report.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="67" column="46" lean-forward="true" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+            <state relative-caret-position="460">
+              <caret line="96" column="7" lean-forward="true" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -132,12 +121,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560886940029</updated>
       <workItem from="1560886942786" duration="3285000" />
-      <workItem from="1560890810368" duration="19473000" />
+      <workItem from="1560890810368" duration="20457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22758000" />
+    <option name="totallyTimeSpent" value="23742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -230,15 +219,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/attendance_report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="193" column="84" selection-start-line="193" selection-start-column="67" selection-end-line="193" selection-end-column="84" />
+        <state relative-caret-position="160">
+          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/attendance_report.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="67" column="46" lean-forward="true" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+        <state relative-caret-position="460">
+          <caret line="96" column="7" lean-forward="true" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
         </state>
       </provider>
     </entry>

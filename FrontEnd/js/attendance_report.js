@@ -45,7 +45,7 @@ $(document).ready(function () {
                 studentTotalDaysCount += response[i].noOfDays;
                 $('#myBlock').append('<option value="' + response[i].startDate + "|" + response[i].endDate + "|" + response[i].noOfDays + '" selected="selected">' + response[i].name + '</option>');
             }
-            console.log('studentTotalDaysCount:' + studentTotalDaysCount);
+            $('#myBlock').append('<option selected="selected">Select Block</option>');
             $('#totalSessionsPossible').html(studentTotalDaysCount);
         }).fail(function (err) {
         }).always(function () {
@@ -89,6 +89,7 @@ $(document).ready(function () {
         for (let i = 0; i < response.length; i++) {
             $('#myStudent').append('<option value="' + response[i].id + "|" + response[i].entryBlock.id + '" selected="selected">' + response[i].name + '</option>');
         }
+        $('#myStudent').append('<option selected="selected">Select Student</option>');
     }).fail(function (err) {
         // alert("error")
         console.log('err:' + err);
