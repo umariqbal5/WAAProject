@@ -10,11 +10,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:8083"}, maxAge = 6000)
 public class UploadFileController {
     @Autowired
     MeditationService meditationService;
@@ -27,21 +28,15 @@ public class UploadFileController {
 
     @PostMapping(value = "/api/saveTmRecord", produces = "application/json")
     public List<Meditation> saveTmRecord(@RequestBody List<Meditation> records) {
-        List<Student> students = new ArrayList<>();
+        HashMap<Long, Student> studentHashMap = new HashMap<>();
         List<Meditation> meditations = new ArrayList<>();
         for (Meditation record : records) {
             Student student = null;
             if (record.getStudent() == null) {
                 student = studentService.findById(record.getId());
-                if (student == null) {
-                    student = searchInList(students, record.getId(), null);
-                }
             } else {
                 student = studentService.findByRegistrationNumber(
                         record.getStudent().getRegistrationNumber());
-                if (student == null) {
-                    student = searchInList(students, null, record.getStudent().getRegistrationNumber());
-                }
             }
             if (student == null) {
                 student = new Student();
@@ -50,11 +45,18 @@ public class UploadFileController {
                 student.setName(student.getId().toString());
                 student.setUsername(student.getId().toString());
                 student.setPassword(student.getId().toString());
-                student.setRegistrationNumber(record.getStudent() == null ? record.getId().toString() :
+                student.setRegistrationNumber(record.getStudent() == null ?
+                        record.getId().toString() :
                         record.getStudent().getRegistrationNumber());
                 student.getMeditations().add(record);
                 record.setStudent(student);
-                students.add(student);
+                if (!studentHashMap.containsKey(student.getId())) {
+                    studentHashMap.put(student.getId(), student);
+                }
+                else{
+                    studentHashMap.get(student.getId())
+                            .getMeditations().add(record);
+                }
             } else {
                 record.setStudent(student);
                 if (meditationService.isNotExist(record)) {
@@ -62,22 +64,15 @@ public class UploadFileController {
                 }
             }
         }
-        if (students.size() != 0) {
-            studentService.saveAll(students);
+        if (!studentHashMap.isEmpty()) {
+            studentService.saveAll(studentHashMap.values()
+                    .stream().collect(Collectors.toList()));
         }
         if (meditations.size() != 0) {
             meditationService.saveAll(meditations);
         }
         System.out.println("Save Success");
         return meditations;
-    }
-
-
-    private Student searchInList(List<Student> students, Long id, String registNumber) {
-        Optional<Student> student = students.stream().filter(
-                x -> id != null ? x.getId() == id : x.getRegistrationNumber() == registNumber
-        ).findFirst();
-        return student.isPresent() ? student.get() : null;
     }
 
     /**

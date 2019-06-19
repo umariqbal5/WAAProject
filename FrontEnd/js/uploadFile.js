@@ -7,9 +7,9 @@ function previewText() {
         var textContents = evt.target.result;
         lines = textContents.split(/\n/);
         lines = jQuery.unique(lines);
-        // console.log(lines);
     };
     reader.readAsText(inputFile.files[0]);
+    $('#read-file').attr('disabled', false);
 };
 
 const readFile = async () => {
@@ -35,31 +35,31 @@ const readFile = async () => {
             myObject.student.name = values[2];
         }
         objects.push(myObject)
-        if (objects.length == 100) {
-            cnt++;
-            console.log("cnt: " + cnt);
-            await makeAjaxCall(objects);
-            objects = [];
-        }
+        // if (objects.length == 3000) {
+        //     cnt++;
+        //     console.log("cnt: " + cnt);
+        //     await makeAjaxCall(objects);
+        //     objects = [];
+        // }
     }
     if (objects.length != 0) {
         await makeAjaxCall(objects);
     }
+    $('#read-file').attr('disabled', false);
 }
 
 async function makeAjaxCall(objects) {
     objects = Array.from(new Set(objects.map(JSON.stringify))).map(JSON.parse);
     var data = JSON.stringify(objects);
-    // var data = JSON.stringify($("#employeeForm").serializeFormJSON());
-    console.log(data);
+    // console.log(data);
     $.ajax({
         type: "POST",
-        url: "http://localhost:8084/api/saveTmRecord",
+        url: "http://localhost:8080/api/saveTmRecord",
         data: data,
         contentType: "application/json",
         dataType: "json",
         success: function (emp) {
-            console.log(emp);
+            console.log("SUCCESS...");
         },
 
         error: function (XMLHttpRequest) {
@@ -70,7 +70,21 @@ async function makeAjaxCall(objects) {
 }
 
 $(document).ready(function () {
+
+    $("#input-file").change(function () {
+        console.log($(this).val());
+        $('#read-file').attr('disabled', true);
+        if ($(this).val() == '')
+            return;
+        var fileExtension = ['txt'];
+        if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
+            alert("Only *.txt file is allowed.");
+            return;
+        }
+        previewText();
+    });
     $('#read-file').click(function (event) {
+        $('#read-file').attr('disabled', true);
         readFile();
     });
 });
