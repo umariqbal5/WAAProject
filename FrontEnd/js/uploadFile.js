@@ -35,12 +35,12 @@ const readFile = async () => {
             myObject.student.name = values[2];
         }
         objects.push(myObject)
-        // if (objects.length == 3000) {
-        //     cnt++;
-        //     console.log("cnt: " + cnt);
-        //     await makeAjaxCall(objects);
-        //     objects = [];
-        // }
+        if (objects.length == 500) {
+            cnt++;
+            console.log("cnt: " + cnt);
+            await makeAjaxCall(objects);
+            objects = [];
+        }
     }
     if (objects.length != 0) {
         await makeAjaxCall(objects);
@@ -51,13 +51,13 @@ const readFile = async () => {
 async function makeAjaxCall(objects) {
     objects = Array.from(new Set(objects.map(JSON.stringify))).map(JSON.parse);
     var data = JSON.stringify(objects);
-    // console.log(data);
     $.ajax({
         type: "POST",
         url: "http://localhost:8080/api/saveTmRecord",
         data: data,
         contentType: "application/json",
         dataType: "json",
+        async: false,
         success: function (emp) {
             console.log("SUCCESS...");
         },
@@ -72,7 +72,6 @@ async function makeAjaxCall(objects) {
 $(document).ready(function () {
 
     $("#input-file").change(function () {
-        console.log($(this).val());
         $('#read-file').attr('disabled', true);
         if ($(this).val() == '')
             return;
