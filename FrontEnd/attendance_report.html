@@ -172,9 +172,9 @@ desired effect
                     <br>
 
                     <div>
-                        <label>Total sessions possible:</label> 85<br>
-                        <label>Total sessions attended:</label> 70<br>
-                        <label>Percent attendance:</label> 85%
+                        <label>Total sessions possible:</label> <b id="totalSessionsPossible"></b><br>
+                        <label>Total sessions attended:</label> <b id="totalSessionsAttended"></b><br>
+                        <label>Percent attendance:</label> <b id="totalPercentAttended"></b>
                     </div>
                     <br>
 
@@ -188,10 +188,10 @@ desired effect
                     <br>
 
                     <div>
-                        <label>Sessions in block:</label> 17<br>
-                        <label>Days present:</label> 6<br>
-                        <label>Percentage attended:</label> 35.5<br>
-                        <label>Extra credit points:</label> 0.0<br>
+                        <label>Sessions in block:</label> <b id="sessionInBlock"></b><br>
+                        <label>Days present:</label> <b id="daysPresent"></b><br>
+                        <label>Percentage attended:</label> <b id="percentageAttended"></b><br>
+                        <label>Extra credit points:</label> <b id="extraCreditPoints"></b><br>
                     </div>
 
                     <div>
@@ -203,39 +203,6 @@ desired effect
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>2019-05-27</td>
-                            </tr>
-                            <tr>
-                                <td>2019-05-27</td>
-                            </tr>
-                            <tr>
-                                <td>2019-05-27</td>
-                            </tr>
-                            <tr>
-                                <td>2019-05-27</td>
-                            </tr>
-                            <tr>
-                                <td>2019-05-27</td>
-                            </tr>
-                            <tr>
-                                <td>2019-05-27</td>
-                            </tr>
-                            <tr>
-                                <td>2019-05-27</td>
-                            </tr>
-                            <tr>
-                                <td>2019-05-27</td>
-                            </tr>
-                            <tr>
-                                <td>2019-05-27</td>
-                            </tr>
-                            <tr>
-                                <td>2019-05-27</td>
-                            </tr>
-                            <tr>
-                                <td>2019-05-27</td>
-                            </tr>
                             </tbody>
                         </table>
 
@@ -272,61 +239,7 @@ desired effect
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
 
-<script>
-
-    // $.ajax({
-    //     url: 'http://localhost:8080/api/get/blocks',
-    //     type: 'GET',
-    //     dataType: "jsonp",
-    //     success: function (response) {
-    //         alert("Product Successfully added to the Cart!");
-    //     },
-    //     error: function () {
-    //         alert('Error while request..');
-    //     }
-    // });
-
-    // $.ajax({
-    //     type: "get",
-    //     async: false,
-    //     url: "http://localhost:8080/api/get/blocks",
-    //     dataType: "jsonp",
-    //     jsonp: "callbackparam",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(默认为:callback)
-    //     jsonpCallback: "success_jsonpCallback",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名
-    //     success: function (json) {
-    //         alert(json);
-    //         alert(json[0].name);
-    //     },
-    //     error: function () {
-    //         alert('fail');
-    //     }
-    // });
-
-    var myBlockList = {
-        val1: 'JAN 2019',
-        val2: 'FEB 2019'
-    };
-
-    var myBlock = $('#myBlock');
-    $.each(myBlockList, function (val, text) {
-        myBlock.append(
-            $('<option></option>').val(val).html(text)
-        );
-    });
-
-    var myStudentList = {
-        val1: 'Umar',
-        val2: 'Mingyu'
-    };
-    var myStudent = $('#myStudent');
-    $.each(myStudentList, function (val, text) {
-        myStudent.append(
-            $('<option></option>').val(val).html(text)
-        );
-    });
-
-
-</script>
+<script type="text/javascript" src="js/attendance_report.js"></script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the

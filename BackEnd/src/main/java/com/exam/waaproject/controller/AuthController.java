@@ -22,7 +22,7 @@ import static org.springframework.http.ResponseEntity.ok;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = {"http://localhost:63342"}, maxAge = 6000)
+//@CrossOrigin(origins = {"http://localhost:63342"}, maxAge = 6000)
 public class AuthController {
 
     @Autowired

@@ -9,4 +9,6 @@ public interface BlockService {
 
     public List<Block> getAll();
 
+    public List<Block> getBlocksByEntryBlockId(Long entryBlockId);
+
 }

@@ -20,4 +20,9 @@ public class BlockServiceImpl implements BlockService {
         return (List<Block>) blockRepository.findAll();
     }
 
+    @Override
+    public List<Block> getBlocksByEntryBlockId(Long entryBlockId) {
+        return blockRepository.findBlocksByEntryBlockId(entryBlockId);
+    }
+
 }
