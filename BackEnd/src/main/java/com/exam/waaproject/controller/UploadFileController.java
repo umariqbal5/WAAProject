@@ -42,7 +42,9 @@ public class UploadFileController {
                 student = new Student();
                 student.setId(record.getStudent() == null ? record.getId() :
                         toLongId(record.getStudent().getRegistrationNumber()));
-                student.setName(student.getId().toString());
+                student.setName(record.getStudent() == null ?
+                        student.getId().toString():
+                        record.getStudent().getName());
                 student.setUsername(student.getId().toString());
                 student.setPassword(student.getId().toString());
                 student.setRegistrationNumber(record.getStudent() == null ?
