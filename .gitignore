@@ -1,3 +1,5 @@
 **/bower_components/**
 **/node_modules/**
 FrontEnd/.idea/**
+FrontEnd/.idea/workspace.xml
+*.xml
