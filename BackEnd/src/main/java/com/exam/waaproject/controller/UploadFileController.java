@@ -9,6 +9,8 @@ import com.exam.waaproject.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -23,12 +25,21 @@ public class UploadFileController {
 
     @PostMapping(value = "/api/saveTmRecord", produces = "application/json")
     public List<Meditation> saveTmRecord(@RequestBody List<Meditation> records) {
-        List<Block> blocks = blockService.getAll();
         HashMap<Long, Student> studentHashMap = new HashMap<>();
         List<Meditation> meditations = new ArrayList<>();
-        Random rand = new Random();
         for (Meditation record : records) {
-            int randomIdx = rand.nextInt(blocks.size());
+            Block block = blockService.findBlockByRange(java.sql.Date.valueOf(record.getDate()));
+            if (block == null) {
+                LocalDate initial = record.getDate();
+                block = new Block();
+                block.setName(initial.format(DateTimeFormatter.ofPattern("MMM yyyy")).toUpperCase());
+                block.setStartDate(java.sql.Date.valueOf(
+                        initial.withDayOfMonth(1)));
+                block.setEndDate(java.sql.Date.valueOf
+                        (initial.withDayOfMonth(initial.lengthOfMonth())));
+                block.setNoOfDays(14);
+                block = blockService.save(block);
+            }
             Student student = null;
             if (record.getStudent() == null) {
                 student = studentService.findById(record.getId());
@@ -48,7 +59,7 @@ public class UploadFileController {
                 student.setRegistrationNumber(record.getStudent() == null ?
                         record.getId().toString() :
                         record.getStudent().getRegistrationNumber());
-                student.setEntryBlock(blocks.get(randomIdx));
+                student.setEntryBlock(block);
                 student.getMeditations().add(record);
                 record.setStudent(student);
                 if (!studentHashMap.containsKey(student.getId())) {

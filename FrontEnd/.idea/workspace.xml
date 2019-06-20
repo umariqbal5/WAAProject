@@ -1,442 +1,346 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="434b4948-729d-4e60-a7e7-64e7299278c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bower_components.zip" beforeDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/attendance_report.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="147" column="45" selection-start-line="147" selection-start-column="36" selection-end-line="147" selection-end-column="45" />
-            </state>
-          </provider>
+    <component name="ChangeListManager">
+        <list default="true" id="434b4948-729d-4e60-a7e7-64e7299278c2" name="Default Changelist" comment="">
+            <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/js/attendance_by_students.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/attendance_by_students.js" afterDir="false" />
+            <change beforePath="$PROJECT_DIR$/js/attendance_report.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/attendance_report.js" afterDir="false" />
+        </list>
+        <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+        <option name="SHOW_DIALOG" value="false" />
+        <option name="HIGHLIGHT_CONFLICTS" value="true" />
+        <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+        <option name="LAST_RESOLUTION" value="IGNORE" />
+    </component>
+    <component name="DefaultGradleProjectSettings">
+        <option name="isMigrated" value="true" />
+    </component>
+    <component name="FileEditorManager">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/js/attendance_report.js">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="251">
+                            <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/js/attendance_by_students.js">
+                    <provider selected="true" editor-type-id="text-editor">
+                        <state relative-caret-position="279">
+                            <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+                            <folding>
+                                <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+                                <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
+                                <element signature="n#style#0;n#td#2;n#tr#0;n#!!top" expanded="true" />
+                                <element signature="n#style#0;n#td#3;n#tr#0;n#!!top" expanded="true" />
+                            </folding>
+                        </state>
+                    </provider>
+                </entry>
+            </file>
+        </leaf>
+    </component>
+    <component name="FileTemplateManagerImpl">
+        <option name="RECENT_TEMPLATES">
+            <list>
+                <option value="JavaScript File" />
+            </list>
+        </option>
+    </component>
+    <component name="FindInProjectRecents">
+        <findStrings>
+            <find>reason</find>
+            <find>studentTotalDaysCount</find>
+            <find>getBlocks</find>
+            <find>3</find>
+        </findStrings>
+    </component>
+    <component name="Git.Settings">
+        <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    </component>
+    <component name="IdeDocumentHistory">
+        <option name="CHANGED_PATHS">
+            <list>
+                <option value="$PROJECT_DIR$/upLoadFile.html" />
+                <option value="$PROJECT_DIR$/attendance_report.html" />
+                <option value="$PROJECT_DIR$/attendance_by_student.html" />
+                <option value="$PROJECT_DIR$/pages/retreat/retreat.html" />
+                <option value="$PROJECT_DIR$/pages/checking/checking.html" />
+                <option value="$PROJECT_DIR$/js/auth.js" />
+                <option value="$PROJECT_DIR$/login.html" />
+                <option value="$PROJECT_DIR$/js/attendance_report.js" />
+                <option value="$PROJECT_DIR$/js/attendance_by_students.js" />
+            </list>
+        </option>
+    </component>
+    <component name="ProjectFrameBounds" extendedState="6">
+        <option name="x" value="85" />
+        <option name="y" value="25" />
+        <option name="width" value="1750" />
+        <option name="height" value="980" />
+    </component>
+    <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+        <ConfirmationsSetting value="2" id="Add" />
+    </component>
+    <component name="ProjectView">
+        <navigator proportions="" version="1">
+            <foldersAlwaysOnTop value="true" />
+        </navigator>
+        <panes>
+            <pane id="Scope" />
+            <pane id="PackagesPane" />
+            <pane id="ProjectPane">
+                <subPane>
+                    <expand>
+                        <path>
+                            <item name="FrontEnd" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                        <path>
+                            <item name="FrontEnd" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+                            <item name="js" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                        <path>
+                            <item name="FrontEnd" type="b2602c69:ProjectViewProjectNode" />
+                            <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+                            <item name="pages" type="462c0819:PsiDirectoryNode" />
+                        </path>
+                    </expand>
+                    <select />
+                </subPane>
+            </pane>
+        </panes>
+    </component>
+    <component name="PropertiesComponent">
+        <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+        <property name="WebServerToolWindowFactoryState" value="false" />
+        <property name="aspect.path.notification.shown" value="true" />
+        <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+        <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+        <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    </component>
+    <component name="RecentsManager">
+        <key name="CopyFile.RECENT_KEYS">
+            <recent name="$PROJECT_DIR$" />
+        </key>
+    </component>
+    <component name="RunDashboard">
+        <option name="ruleStates">
+            <list>
+                <RuleState>
+                    <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+                </RuleState>
+                <RuleState>
+                    <option name="name" value="StatusDashboardGroupingRule" />
+                </RuleState>
+            </list>
+        </option>
+    </component>
+    <component name="SvnConfiguration">
+        <configuration />
+    </component>
+    <component name="TaskManager">
+        <task active="true" id="Default" summary="Default task">
+            <changelist id="539ab930-f93c-4d22-ab47-e50e46af263d" name="Default Changelist" comment="" />
+            <created>1560886940029</created>
+            <option name="number" value="Default" />
+            <option name="presentableId" value="Default" />
+            <updated>1560886940029</updated>
+            <workItem from="1560886942786" duration="3285000" />
+            <workItem from="1560890810368" duration="31638000" />
+        </task>
+        <servers />
+    </component>
+    <component name="TimeTrackingManager">
+        <option name="totallyTimeSpent" value="36981000" />
+    </component>
+    <component name="ToolWindowManager">
+        <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+        <editor active="true" />
+        <layout>
+            <window_info content_ui="combo" id="Project" order="0" weight="0.2532189" />
+            <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+            <window_info id="Image Layers" order="2" />
+            <window_info id="Designer" order="3" />
+            <window_info id="UI Designer" order="4" />
+            <window_info id="Capture Tool" order="5" />
+            <window_info id="Favorites" order="6" side_tool="true" />
+            <window_info anchor="bottom" id="Message" order="0" />
+            <window_info anchor="bottom" id="Find" order="1" />
+            <window_info anchor="bottom" id="Run" order="2" />
+            <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+            <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+            <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+            <window_info anchor="bottom" id="TODO" order="6" />
+            <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+            <window_info anchor="bottom" id="Version Control" order="8" />
+            <window_info anchor="bottom" id="Database Changes" order="9" />
+            <window_info anchor="bottom" id="Terminal" order="10" weight="0.3385542" />
+            <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+            <window_info anchor="bottom" id="Messages" order="12" />
+            <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+            <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+            <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+            <window_info anchor="right" id="Palette" order="3" />
+            <window_info anchor="right" id="Theme Preview" order="4" />
+            <window_info anchor="right" id="Maven" order="5" />
+            <window_info anchor="right" id="Capture Analysis" order="6" />
+            <window_info anchor="right" id="Palette&#9;" order="7" />
+            <window_info anchor="right" id="Database" order="8" />
+        </layout>
+        <layout-to-restore>
+            <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+            <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+            <window_info id="Image Layers" order="2" />
+            <window_info id="Designer" order="3" />
+            <window_info id="UI Designer" order="4" />
+            <window_info id="Capture Tool" order="5" />
+            <window_info id="Favorites" order="6" side_tool="true" />
+            <window_info anchor="bottom" id="Messages" order="0" />
+            <window_info anchor="bottom" id="Message" order="1" />
+            <window_info anchor="bottom" id="Find" order="2" />
+            <window_info anchor="bottom" id="Run" order="3" />
+            <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+            <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+            <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+            <window_info anchor="bottom" id="TODO" order="7" />
+            <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+            <window_info anchor="bottom" id="Version Control" order="9" />
+            <window_info anchor="bottom" id="Database Changes" order="10" />
+            <window_info anchor="bottom" id="Terminal" order="11" weight="0.3385542" />
+            <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+            <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+            <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+            <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+            <window_info anchor="right" id="Palette" order="3" />
+            <window_info anchor="right" id="Theme Preview" order="4" />
+            <window_info anchor="right" id="Maven" order="5" />
+            <window_info anchor="right" id="Capture Analysis" order="6" />
+            <window_info anchor="right" id="Palette&#9;" order="7" />
+            <window_info anchor="right" id="Database" order="8" />
+        </layout-to-restore>
+    </component>
+    <component name="TypeScriptGeneratedFilesManager">
+        <option name="version" value="1" />
+    </component>
+    <component name="editorHistoryManager">
+        <entry file="file://$PROJECT_DIR$/bower_components/font-awesome/css/font-awesome.min.css">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="265">
+                    <caret line="63" column="49" lean-forward="true" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+                </state>
+            </provider>
         </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/auth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="44" column="86" lean-forward="true" selection-start-line="44" selection-start-column="86" selection-end-line="44" selection-end-column="86" />
-              <folding>
-                <marker date="1561022599753" expanded="true" signature="0:2404" ph="..." />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/pages/tables/simple.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                    <caret line="799" column="33" lean-forward="true" selection-start-line="799" selection-start-column="33" selection-end-line="799" selection-end-column="33" />
+                </state>
+            </provider>
         </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/attendance_report.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="105" column="37" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/dist/js/pages/retreat/retreat.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                    <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+                </state>
+            </provider>
         </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="73" column="39" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
-              <folding>
-                <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/checking/checking.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="256" column="42" lean-forward="true" selection-start-line="256" selection-start-column="42" selection-end-line="256" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dist/js/pages/checking/checking.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="46" column="78" lean-forward="true" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
-            </state>
-          </provider>
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="208">
+                    <caret line="115" column="14" lean-forward="true" selection-start-line="115" selection-start-column="14" selection-end-line="115" selection-end-column="14" />
+                </state>
+            </provider>
         </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>reason</find>
-      <find>studentTotalDaysCount</find>
-      <find>myStudent</find>
-    </findStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/js/attendance_by_students.js" />
-        <option value="$PROJECT_DIR$/upLoadFile.html" />
-        <option value="$PROJECT_DIR$/attendance_report.html" />
-        <option value="$PROJECT_DIR$/attendance_by_student.html" />
-        <option value="$PROJECT_DIR$/pages/retreat/retreat.html" />
-        <option value="$PROJECT_DIR$/pages/checking/checking.html" />
-        <option value="$PROJECT_DIR$/js/auth.js" />
-        <option value="$PROJECT_DIR$/js/attendance_report.js" />
-        <option value="$PROJECT_DIR$/login.html" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FrontEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FrontEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FrontEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FrontEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FrontEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="checking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FrontEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="retreat" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="539ab930-f93c-4d22-ab47-e50e46af263d" name="Default Changelist" comment="" />
-      <created>1560886940029</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1560886940029</updated>
-      <workItem from="1560886942786" duration="3285000" />
-      <workItem from="1560890810368" duration="31638000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41201000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2532189" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3385542" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3385542" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-    </layout-to-restore>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bower_components/font-awesome/css/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="63" column="49" lean-forward="true" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/tables/simple.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="799" column="33" lean-forward="true" selection-start-line="799" selection-start-column="33" selection-end-line="799" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/pages/retreat/retreat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/attendance_by_student.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="112" column="38" selection-start-line="112" selection-start-column="38" selection-end-line="112" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/attendance_by_students.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="90" column="46" lean-forward="true" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/starter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="419" column="33" lean-forward="true" selection-start-line="419" selection-start-column="33" selection-end-line="419" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/uploadFile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/retreat/retreat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="119" column="38" selection-start-line="119" selection-start-column="38" selection-end-line="119" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upLoadFile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/attendance_report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="147" column="45" selection-start-line="147" selection-start-column="36" selection-end-line="147" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="44" column="86" lean-forward="true" selection-start-line="44" selection-start-column="86" selection-end-line="44" selection-end-column="86" />
-          <folding>
-            <marker date="1561022599753" expanded="true" signature="0:2404" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/attendance_report.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="105" column="37" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="73" column="39" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/checking/checking.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="256" column="42" lean-forward="true" selection-start-line="256" selection-start-column="42" selection-end-line="256" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/pages/checking/checking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="46" column="78" lean-forward="true" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
-  </component>
+        <entry file="file://$PROJECT_DIR$/attendance_by_student.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2397">
+                    <caret line="166" column="20" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="20" />
+                    <folding>
+                        <element signature="n#style#0;n#select#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                        <element signature="e#7018#7024#0" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/attendance_report.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="385">
+                    <caret line="166" column="26" lean-forward="true" selection-start-line="166" selection-start-column="26" selection-end-line="166" selection-end-column="26" />
+                    <folding>
+                        <element signature="n#style#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#select#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#table#0;n#div#4;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                        <element signature="e#8520#8526#0" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/js/auth.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="348">
+                    <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/login.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                    <caret line="57" column="14" lean-forward="true" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+                    <folding>
+                        <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/starter.html">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="283">
+                    <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/js/attendance_report.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="251">
+                    <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+                </state>
+            </provider>
+        </entry>
+        <entry file="file://$PROJECT_DIR$/js/attendance_by_students.js">
+            <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="279">
+                    <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+                    <folding>
+                        <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#td#2;n#tr#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#td#3;n#tr#0;n#!!top" expanded="true" />
+                    </folding>
+                </state>
+            </provider>
+        </entry>
+    </component>
+    <component name="masterDetails">
+        <states>
+            <state key="ProjectJDKs.UI">
+                <settings>
+                    <last-edited>1.8</last-edited>
+                    <splitter-proportions>
+                        <option name="proportions">
+                            <list>
+                                <option value="0.2" />
+                            </list>
+                        </option>
+                    </splitter-proportions>
+                </settings>
+            </state>
+        </states>
+    </component>
 </project>

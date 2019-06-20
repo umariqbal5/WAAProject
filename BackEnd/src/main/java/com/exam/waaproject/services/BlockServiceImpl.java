@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -23,6 +24,16 @@ public class BlockServiceImpl implements BlockService {
     @Override
     public List<Block> getBlocksByEntryBlockId(Long entryBlockId) {
         return blockRepository.findBlocksByEntryBlockId(entryBlockId);
+    }
+
+    @Override
+    public Block findBlockByRange(Date date) {
+        return blockRepository.findBlockByRange(date);
+    }
+
+    @Override
+    public Block save(Block block) {
+        return blockRepository.save(block);
     }
 
 }

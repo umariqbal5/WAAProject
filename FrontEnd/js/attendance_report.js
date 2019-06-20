@@ -67,9 +67,9 @@ $(document).ready(function () {
             $('#daysPresent').html(response.length);
             $('#percentageAttended').html(getPercent(response.length, blockDateArr[2]));
 
-            if (blockDateArr[2] - response.length < 3) {
+            if (blockDateArr[2] - response.length < 7) {
                 $('#extraCreditPoints').html("1.5");
-            } else if (blockDateArr[2] - response.length == 3) {
+            } else if (blockDateArr[2] - response.length == 7) {
                 $('#extraCreditPoints').html("1.0");
             } else {
                 $('#extraCreditPoints').html("0");
