@@ -3,8 +3,17 @@ $(document).ready(function(){
     console.log('loaded auth.js')
 
     //Set User Name
-    if(localStorage.getItem("user"))
+    if(localStorage.getItem("user")){
         $("#username").text(localStorage.getItem("user"))
+
+        let roles = localStorage.getItem("roles");
+        console.log(roles)
+        if(!roles.includes("ROLE_ADMIN")){
+            //Hide Admin Menu
+            $(".link_admin").addClass('hidden')
+        }
+    }
+
 
     //form submit
     $("form").submit(function(event){
@@ -36,7 +45,7 @@ $(document).ready(function(){
                 localStorage.setItem("roles", tokenJson.roles);
             }
             //Redirect to Next Page
-            window.location.replace("upLoadFile.html");
+            window.location.replace("attendance_report.html");
 
         }).fail(function (xhr, status, error) {
             console.log(xhr.responseText);
