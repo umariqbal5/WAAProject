@@ -21,3 +21,12 @@ Download the Sourcecode from Github	<br>
 UnZip bower_components.zip file in FrontEnd folder	<br>
 	<br>
 Ready to Go :)	<br>
+
+
+<h3>Idea of Uploading File</h3>
+We upload, process and convert data in client side	<br>		
+then send data Asynchronously to server			<br>
+Make sure validations for duplication and student exists and all other.	<br>		
+then save Data to Meditation Table.			<br>
+<h4>Scalability IDEA			<br></h4>
+We can improve and scale this process by using Streaming APIs 			
