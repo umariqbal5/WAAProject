@@ -37,7 +37,7 @@ public class UploadFileController {
                         initial.withDayOfMonth(1)));
                 block.setEndDate(java.sql.Date.valueOf
                         (initial.withDayOfMonth(initial.lengthOfMonth())));
-                block.setNoOfDays(22);
+                block.setNoOfDays(14);
                 block = blockService.save(block);
             }
             Student student = null;
