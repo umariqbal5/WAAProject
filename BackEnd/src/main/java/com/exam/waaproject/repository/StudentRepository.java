@@ -10,6 +10,7 @@ import java.util.List;
 @Repository
 public interface StudentRepository extends CrudRepository<Student, Long> {
 
+
     public List<Student> findAll();
 
     @Query("Select s from Student s Where entryBlockId <= :blockId")
@@ -17,5 +18,8 @@ public interface StudentRepository extends CrudRepository<Student, Long> {
 
     @Query(value = "SELECT S.NAME, COUNT(M.*)  \"TOTAL MEDITATIONS OF CURRENT MONTH\" FROM STUDENT AS S JOIN MEDITATION AS M ON S.ID = M.STUDENT_ID WHERE M.DATE BETWEEN ?1 AND ?2  GROUP BY (S.NAME)\n", nativeQuery = true)
     public List<String> findAllByBlockInSelect(String startDate, String endDate);
+
+
+    public Student findByRegistrationNumber(String registrationNumber);
 
 }

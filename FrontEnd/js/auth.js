@@ -1,9 +1,12 @@
 
 $(document).ready(function(){
-    console.log('loaded')
+    console.log('loaded auth.js')
     //form submit
     $("form").submit(function(event){
         event.preventDefault();
+        $("#error").text("");
+
+
         var _email      = $('#username').val();
         var _password   = $('#password').val();
 
@@ -24,28 +27,24 @@ $(document).ready(function(){
             localStorage.setItem('token',response.token);
             console.log('token',response.token);
 
-            // $.ajaxSetup({
-            //     headers:{
-            //         'Authorization': localStorage.getItem("Bearer "+'token')
-            //     }
-            // })
+            //Redirect to Next Page
+            window.location.replace("upLoadFile.html");
 
+
+        }).fail(function (xhr, status, error) {
+            console.log(xhr.responseText);
+          $("#error").text("");
+            $("#error").text("Username or password not found.");
         }).always(function() {
         });
 
     });
 
-
-
-    $('#btnGet').click(function () {
-        $.ajax("http://localhost:8080/users").done(function (response){
-
-            console.log('response',response);
-
-        }).fail(function(err){
-            console.log(err);
-        }).always(function() {
-        });
+    $("#logout").click(function () {
+        localStorage.removeItem("token");
+        //Redirect to Login
+        window.location.replace("login.html");
     });
+
 });
 

@@ -2,14 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="539ab930-f93c-4d22-ab47-e50e46af263d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/domain/AttendedByStudentsInOneBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/attendance_by_student.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/attendance_by_students.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/AttendanceReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/AttendanceReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/ExportFileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/RetreatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/TmCheckingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/repository/TmCheckingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/repository/TmRetreatRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/TmRetreatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/TmRetreatServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/checking/checking.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/retreat/retreat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/pages/checking/checking.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/pages/retreat/retreat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/uploadFile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/checking/checking.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/retreat/retreat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upLoadFile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploadData/badgeScanned.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploadData/manualCheckIn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/UploadFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/UploadFileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/UserinfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/controller/UserinfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/domain/Meditation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/domain/Meditation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/domain/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/domain/TmChecking.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/domain/TmChecking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/domain/TmRetreat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/domain/TmRetreat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/repository/MeditationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/repository/MeditationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/MeditationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/MeditationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/MeditationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/MeditationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/java/com/exam/waaproject/services/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackEnd/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../BackEnd/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter.html" beforeDir="false" afterPath="$PROJECT_DIR$/starter.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,25 +55,25 @@
         <entry file="file://$PROJECT_DIR$/attendance_report.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="415">
-              <caret line="168" column="33" lean-forward="true" selection-start-line="168" selection-start-column="33" selection-end-line="168" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/attendance_by_student.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="56" column="21" lean-forward="true" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+              <caret line="168" column="33" selection-start-line="168" selection-start-column="33" selection-end-line="168" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/attendance_by_student.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="197" column="28" selection-start-line="197" selection-start-column="28" selection-end-line="197" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/attendance_by_students.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+            <state relative-caret-position="207">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />
@@ -175,11 +204,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34923000" />
+    <option name="totallyTimeSpent" value="35419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -188,7 +216,6 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -199,8 +226,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3385542" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3385542" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -285,14 +313,14 @@
     <entry file="file://$PROJECT_DIR$/attendance_report.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
-          <caret line="168" column="33" lean-forward="true" selection-start-line="168" selection-start-column="33" selection-end-line="168" selection-end-column="33" />
+          <caret line="168" column="33" selection-start-line="168" selection-start-column="33" selection-end-line="168" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/attendance_by_student.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="56" column="21" lean-forward="true" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+        <state relative-caret-position="279">
+          <caret line="197" column="28" selection-start-line="197" selection-start-column="28" selection-end-line="197" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -305,8 +333,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/attendance_by_students.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+        <state relative-caret-position="207">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#1;n#tr#0;n#!!top" expanded="true" />

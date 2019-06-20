@@ -40,10 +40,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/h2-console/**").permitAll()
                 .antMatchers("/auth/signin").permitAll()
 //                .antMatchers(HttpMethod.GET, "/api/all/**").permitAll()
+
 //                .antMatchers(HttpMethod.DELETE, "/vehicles/**").hasRole("ADMIN")
 //                .antMatchers( "/api/**").hasRole("ADMIN")
                 .antMatchers( "/api/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/**").permitAll()
+
+//                .antMatchers( "/api/**").hasRole("ADMIN")
+                .antMatchers("/**").permitAll()
+
                 .anyRequest().authenticated()
                 .and()
                 .apply(new JwtConfigurer(jwtTokenProvider));

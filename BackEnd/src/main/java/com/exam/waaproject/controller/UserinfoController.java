@@ -20,7 +20,7 @@ import static java.util.stream.Collectors.toList;
 import static org.springframework.http.ResponseEntity.ok;
 
 @RestController()
-@CrossOrigin(origins = {"http://localhost:63342"}, maxAge = 6000)
+//@CrossOrigin(origins = {"http://localhost:63342"}, maxAge = 6000)
 public class UserinfoController {
 
     @Autowired
@@ -38,7 +38,7 @@ public class UserinfoController {
         return ok(model);
     }
 
-    @GetMapping("/users")
+    @GetMapping("/api/users")
     public List<User> getData1(){
         return userService.findAllUsers();
     }

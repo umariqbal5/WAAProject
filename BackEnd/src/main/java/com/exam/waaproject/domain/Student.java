@@ -1,5 +1,6 @@
 package com.exam.waaproject.domain;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
@@ -13,14 +14,18 @@ import java.util.List;
 public class Student {
 
     @Id
+    @Excel(name = "STU_ID")
     private Long id; //Badge number
 
     @NotEmpty(message = "Name should not be empty!")
     @Column(name = "Name")
+    @Excel(name = "NAME")
     private String name;
 
     private String username;
     private String password;
+
+    @Excel(name = "STU_R_NUM", width = 12)
     private String registrationNumber;
 
     //OnetoOne Relation
@@ -36,12 +41,4 @@ public class Student {
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
     private List<Meditation> meditations = new ArrayList<>();
-
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<TmChecking> tmCheckings = new ArrayList<>();
-
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<TmRetreat> tmRetreats = new ArrayList<>();
-
-
 }

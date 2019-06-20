@@ -19,12 +19,18 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    public Iterable<Student> saveAll(List<Student> students) {
+        return studentRepository.saveAll(students);
+    }
+
+    @Override
     public Student findById(Long id) {
         Optional<Student> student = studentRepository.findById(id);
         return student.isPresent() ? student.get() : null;
     }
 
     @Override
+<<<<<<< HEAD
     public List<Student> getAll() {
         return studentRepository.findAll();
     }
@@ -32,5 +38,9 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public List<String> getStudentsInBlock(String startDate, String endDate) {
         return studentRepository.findAllByBlockInSelect(startDate, endDate);
+=======
+    public Student findByRegistrationNumber(String number) {
+        return studentRepository.findByRegistrationNumber(number);
+>>>>>>> master
     }
 }
