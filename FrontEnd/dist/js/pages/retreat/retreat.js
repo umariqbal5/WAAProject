@@ -29,6 +29,20 @@ $(document).ready(function() {
         autoclose: true
     });
 
+    $('#download').click(function () {
+        $('#studenIDGroup').removeClass("has-error");
+        $('#studenIDError').hide();
+
+        let sid = $("#studentID").val();
+        console.log(sid);
+        if (sid == null || sid.length < 1) {
+            $('#studenIDGroup').addClass("has-error");
+            $('#studenIDError').html("Student ID can't be empty");
+            $('#studenIDError').show();
+            return;
+        }
+        window.open('http://localhost:8080/api/export/retreat?stu_id=' + sid)
+    });
     $('#save-button').click(function () {
         $('#studenIDGroup').removeClass("has-error");
         $('#studenIDError').hide();
