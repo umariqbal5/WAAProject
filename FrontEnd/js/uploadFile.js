@@ -45,6 +45,7 @@ const readFile = async () => {
     if (objects.length != 0) {
         await makeAjaxCall(objects);
     }
+    alert("Saved data success!")
     $('#read-file').attr('disabled', false);
 }
 

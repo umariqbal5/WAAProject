@@ -1,18 +1,15 @@
 package com.exam.waaproject.controller;
 
+import com.exam.waaproject.domain.Block;
 import com.exam.waaproject.domain.Meditation;
 import com.exam.waaproject.domain.Student;
-import com.exam.waaproject.repository.MeditationRepository;
-import com.exam.waaproject.repository.StudentRepository;
+import com.exam.waaproject.services.BlockService;
 import com.exam.waaproject.services.MeditationService;
 import com.exam.waaproject.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @RestController
@@ -22,15 +19,16 @@ public class UploadFileController {
     @Autowired
     StudentService studentService;
     @Autowired
-    StudentRepository studentRepository;
-    @Autowired
-    MeditationRepository meditationRepository;
+    BlockService blockService;
 
     @PostMapping(value = "/api/saveTmRecord", produces = "application/json")
     public List<Meditation> saveTmRecord(@RequestBody List<Meditation> records) {
+        List<Block> blocks = blockService.getAll();
         HashMap<Long, Student> studentHashMap = new HashMap<>();
         List<Meditation> meditations = new ArrayList<>();
+        Random rand = new Random();
         for (Meditation record : records) {
+            int randomIdx = rand.nextInt(blocks.size());
             Student student = null;
             if (record.getStudent() == null) {
                 student = studentService.findById(record.getId());
@@ -43,19 +41,19 @@ public class UploadFileController {
                 student.setId(record.getStudent() == null ? record.getId() :
                         toLongId(record.getStudent().getRegistrationNumber()));
                 student.setName(record.getStudent() == null ?
-                        student.getId().toString():
+                        student.getId().toString() :
                         record.getStudent().getName());
                 student.setUsername(student.getId().toString());
                 student.setPassword(student.getId().toString());
                 student.setRegistrationNumber(record.getStudent() == null ?
                         record.getId().toString() :
                         record.getStudent().getRegistrationNumber());
+                student.setEntryBlock(blocks.get(randomIdx));
                 student.getMeditations().add(record);
                 record.setStudent(student);
                 if (!studentHashMap.containsKey(student.getId())) {
                     studentHashMap.put(student.getId(), student);
-                }
-                else{
+                } else {
                     studentHashMap.get(student.getId())
                             .getMeditations().add(record);
                 }
