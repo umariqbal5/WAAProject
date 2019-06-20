@@ -46,15 +46,5 @@ $(document).ready(function(){
         window.location.replace("login.html");
     });
 
-
-
-    // $('#btnGet').click(function () {
-    //     $.ajax("http://localhost:8080/api/users").done(function (response){
-    //         console.log('response',response);
-    //     }).fail(function(err){
-    //         console.log(err);
-    //     }).always(function() {
-    //     });
-    // });
 });
 

@@ -16,6 +16,14 @@ $.fn.serializeObject = function()
 };
 $(document).ready(function() {
     "use strict"
+
+    console.log('loaded upload.js')
+    //Redirect to login page if not LogedIn
+    let token = localStorage.getItem("token");
+    if(!token)
+        window.location.replace("../../login.html");
+
+
     // $('#studentIDSelect').select2({
     //     $.ajax("http://localhost:8080/api/retreat").done(function (response){
     //
