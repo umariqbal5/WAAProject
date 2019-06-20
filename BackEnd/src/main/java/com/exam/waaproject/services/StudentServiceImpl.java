@@ -30,7 +30,6 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-<<<<<<< HEAD
     public List<Student> getAll() {
         return studentRepository.findAll();
     }
@@ -38,9 +37,10 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public List<String> getStudentsInBlock(String startDate, String endDate) {
         return studentRepository.findAllByBlockInSelect(startDate, endDate);
-=======
+    }
+
     public Student findByRegistrationNumber(String number) {
         return studentRepository.findByRegistrationNumber(number);
->>>>>>> master
+
     }
 }

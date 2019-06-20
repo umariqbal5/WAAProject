@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    console.log('loaded attendence_by_student.js')
+    //Redirect to login page if not LogedIn
+    let token = localStorage.getItem("token");
+    if(!token)
+        window.location.replace("login.html");
+
+
 
     var noOfDays = 0;
 

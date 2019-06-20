@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+    console.log('loaded attendence_report.js')
+    //Redirect to login page if not LogedIn
+    let token = localStorage.getItem("token");
+    if(!token)
+        window.location.replace("login.html");
+
+
     var studentIdCur = -1;
     var studentEntryBlockIdCur = -1;
 

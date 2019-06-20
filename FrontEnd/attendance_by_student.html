@@ -79,7 +79,7 @@ desired effect
                     <!-- Messages: style can be found in dropdown.less-->
                     <li class="dropdown messages-menu">
                         <!-- Menu toggle button -->
-                        <a href="#">Logout</a>
+                        <a href="#" id="logout">Logout</a>
                     </li>
                     <!-- /.messages-menu -->
                 </ul>
@@ -98,7 +98,7 @@ desired effect
                     <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                    <p>Admin</p>
+                    <p id="username"></p>
                 </div>
             </div>
 
@@ -106,31 +106,11 @@ desired effect
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">MENU</li>
                 <!-- Optionally, you can add icons to the links -->
-                <li><a href="#"><i class="fa fa-link"></i> <span>Upload Attendance</span></a></li>
-                <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Attendance by Students</span></a></li>
-                <li><a href="#"><i class="fa fa-link"></i> <span>Attendance Report</span></a></li>
-                <li class="treeview">
-                    <a href="#"><i class="fa fa-link"></i> <span>TM Retreat</span>
-                        <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="#">ADD</a></li>
-                        <li><a href="#">Show All</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#"><i class="fa fa-link"></i> <span>TM Checking</span>
-                        <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="#">ADD</a></li>
-                        <li><a href="#">Show All</a></li>
-                    </ul>
-                </li>
+                <li><a href="upLoadFile.html"><i class="fa fa-link"></i> <span>Upload Attendance</span></a></li>
+                <li class="active"><a href="attendance_by_student.html"><i class="fa fa-link"></i> <span>Attendance by Students</span></a></li>
+                <li><a href="attendance_report.html"><i class="fa fa-link"></i> <span>Attendance Report</span></a></li>
+                <li><a href="pages/retreat/retreat.html"><i class="fa fa-link"></i><span>TM Retreat</span></a></li>
+                <li><a href="pages/checking/checking.html"><i class="fa fa-link"></i><span>TM Checking</span></a></li>
 
 
             </ul>
@@ -209,5 +189,6 @@ desired effect
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. -->
+<script type="text/javascript" src="js/auth.js"></script>
 </body>
 </html>
