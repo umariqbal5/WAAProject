@@ -54,7 +54,7 @@ async function makeAjaxCall(objects) {
     console.log(data);
     $.ajax({
         type: "POST",
-        url: "http://localhost:8084/api/saveTmRecord",
+        url: "http://localhost:8080/api/saveTmRecord",
         data: data,
         contentType: "application/json",
         dataType: "json",
@@ -70,6 +70,12 @@ async function makeAjaxCall(objects) {
 }
 
 $(document).ready(function () {
+    console.log('loaded upload.js')
+    //Redirect to login page if not LogedIn
+    let token = localStorage.getItem("token");
+    if(!token)
+        window.location.replace("login.html");
+
     $('#read-file').click(function (event) {
         readFile();
     });
