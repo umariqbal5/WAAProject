@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 @Data
@@ -19,6 +20,7 @@ public class TmRetreat {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "student_id")
     @ExcelEntity()
+    @NotNull
     private Student student;
 
     @JsonFormat(pattern = "MM/dd/yyyy")

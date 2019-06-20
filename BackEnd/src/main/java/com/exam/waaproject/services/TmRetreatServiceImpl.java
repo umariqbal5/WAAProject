@@ -16,6 +16,8 @@ public class TmRetreatServiceImpl implements TmRetreatService {
     private TmRetreatRepository tmRetreatRepository;
     @Override
     public void save(TmRetreat tmRetreat) {
+        if (tmRetreat.getStudent() == null) return;
+        if (tmRetreatRepository.findByDateAndStudent(tmRetreat.getDate(), tmRetreat.getStudent()) != null) return;
         tmRetreatRepository.save(tmRetreat);
     }
 
