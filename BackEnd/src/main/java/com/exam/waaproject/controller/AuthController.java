@@ -1,6 +1,7 @@
 package com.exam.waaproject.controller;
 
 import com.exam.waaproject.domain.AuthenticationRequest;
+import com.exam.waaproject.domain.Student;
 import com.exam.waaproject.domain.User;
 import com.exam.waaproject.repository.UserRepository;
 import com.exam.waaproject.security.jwt.JwtTokenProvider;
@@ -43,8 +44,8 @@ public class AuthController {
             String password = data.getPassword();
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
             String token = jwtTokenProvider.createToken(username, this.users.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException("Username " + username + "not found")).getRoles());
-
             Map<Object, Object> model = new HashMap<>();
+            model.put("student", this.users.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException("Username " + username + "not found")).getStudent());
             model.put("username", username);
             model.put("token", token);
             return ok(model);

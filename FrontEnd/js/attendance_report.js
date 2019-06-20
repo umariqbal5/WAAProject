@@ -94,9 +94,19 @@ $(document).ready(function () {
 
     $.ajax("http://localhost:8080/api/get/students").done(function (response) {
         for (let i = 0; i < response.length; i++) {
-            $('#myStudent').append('<option value="' + response[i].id + "|" + response[i].entryBlock.id + '" selected="selected">' + response[i].name + '</option>');
+            $('#myStudent').append('<option value="' + response[i].id + "|" + response[i].entryBlock.id + '">' + response[i].name + '</option>');
         }
         $('#myStudent').append('<option selected="selected">Select Student</option>');
+
+        //Preselect if current login is student
+        if(localStorage.getItem("student")){
+            let student = JSON.parse(localStorage.getItem("student"));
+            if(student.entryBlock)
+                $("option[value='"+student.id+"|"+student.entryBlock.id+"']").attr('selected','selected');
+            $("#myStudent").change();
+            $('#myStudent').attr('disabled', 'disabled');
+        }
+
     }).fail(function (err) {
         // alert("error")
         console.log('err:' + err);

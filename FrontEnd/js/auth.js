@@ -37,10 +37,12 @@ $(document).ready(function(){
             "contentType":"application/json",
             "data": data
         }).done(function (response){
-
+            console.log(response)
             localStorage.setItem('token',response.token);
             let tokenJson= parseJwt(response.token);
             if(tokenJson){
+                if(response.student)
+                    localStorage.setItem("student", JSON.stringify(response.student));
                 localStorage.setItem("user", tokenJson.sub);
                 localStorage.setItem("roles", tokenJson.roles);
             }
@@ -58,6 +60,7 @@ $(document).ready(function(){
 
     $("#logout").click(function () {
         localStorage.removeItem("token");
+        localStorage.removeItem("student");
         localStorage.removeItem("user");
         localStorage.removeItem("roles");
         //Redirect to Login
