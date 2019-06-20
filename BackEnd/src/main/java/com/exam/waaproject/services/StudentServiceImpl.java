@@ -28,4 +28,9 @@ public class StudentServiceImpl implements StudentService {
     public List<Student> getAll() {
         return studentRepository.findAll();
     }
+
+    @Override
+    public List<String> getStudentsInBlock(String startDate, String endDate) {
+        return studentRepository.findAllByBlockInSelect(startDate, endDate);
+    }
 }

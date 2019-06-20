@@ -1,9 +1,6 @@
 package com.exam.waaproject.controller;
 
-import com.exam.waaproject.domain.Block;
-import com.exam.waaproject.domain.Category;
-import com.exam.waaproject.domain.Meditation;
-import com.exam.waaproject.domain.Student;
+import com.exam.waaproject.domain.*;
 import com.exam.waaproject.services.BlockService;
 import com.exam.waaproject.services.CaterogyService;
 import com.exam.waaproject.services.MeditationService;
@@ -59,6 +56,11 @@ public class AttendanceReportController {
     @GetMapping("/api/get/meditations/{studentId}/{startDate}/{endDate}")
     public List<Meditation> getMeditations(@PathVariable Long studentId, @PathVariable String startDate, @PathVariable String endDate) {
         return meditationService.getAllByStudentIdAndStartDateEndDate(studentId, LocalDate.parse(startDate), LocalDate.parse(endDate));
+    }
+
+    @GetMapping("/api/get/stu/{startDate}/{endDate}")
+    public List<String> getMeditations(@PathVariable String startDate, @PathVariable String endDate) {
+        return studentService.getStudentsInBlock(startDate, endDate);
     }
 
 }

@@ -10,4 +10,6 @@ public interface StudentService {
     public Student findById(Long id);
 
     public List<Student> getAll();
+
+    public List<String> getStudentsInBlock(String startDate, String endDate);
 }
