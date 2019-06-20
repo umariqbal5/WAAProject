@@ -45,9 +45,9 @@ $(document).ready(function () {
 
             var extraPoint = 0;
 
-            if (noOfDays - itemArr[1] < 3) {
+            if (noOfDays - itemArr[1] < 7) {
                 extraPoint = 1.5;
-            } else if (noOfDays - itemArr[1] == 3) {
+            } else if (noOfDays - itemArr[1] == 7) {
                 extraPoint = 1;
             } else {
                 extraPoint = 0;
